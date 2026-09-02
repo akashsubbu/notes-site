@@ -1,0 +1,22 @@
+{
+  "name": "notes-site-backend",
+  "version": "1.0.0",
+  "description": "Backend for the COMPUTING notes site. Obsidian (via GitHub) is the only store of note content; Notion holds course/topic tracking metadata only; this server itself is stateless.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@notionhq/client": "^5.26.0",
+    "@octokit/rest": "^20.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1"
+  }
+}
